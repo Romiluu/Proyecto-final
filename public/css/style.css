@@ -1,0 +1,317 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;400&display=swap');
+
+
+
+h1 {
+    color: #e27e1a
+}
+
+body{
+    
+    margin: 0; /*Cubre por completo los margenes*/
+    padding: 0;
+    background-color: #0f0f05 
+    }
+
+
+img {
+    border-radius: 10px;
+
+}
+
+/*estilo header index*/
+
+.headerindex{
+    display: none;
+}
+@media (max-width:991px) {
+    .headerindex{
+        display: block;
+    }
+    
+}
+
+/*ESTILOS CARROUSEL*/
+
+#carouselExample img{
+    height: 30vw;
+    width: 100%;
+}
+@media (max-width:991px) {
+    #carouselExample{
+        display: none !important;
+    }
+    
+}
+
+/*Estilos de header*/
+header{
+    padding: 80px;
+    padding-left: 250px;
+    padding-right: 250px;
+    text-align: center;
+    background-image: url(../img/fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header div{ /*le da cuandrado de fondo al titulo*/
+    font-family: 'Kanit', sans-serif;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: #06171a;
+
+}
+
+@media (max-width: 800px) {
+    header {
+        background-position: center; /*el header es responsive*/
+    }
+}
+/*estilos navbar bootstrap*/
+
+.navbar{
+    background-color: #e27e1a !important;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.navbar-nav a:hover{
+    background-color: rgba(255, 166, 0, 0.753);
+    color:#e27e1a;
+
+}
+@media (max-width: 991px) {
+    .navbar-nav{
+        text-align: center;
+    }
+    
+}
+
+/*estilos navbar formulario*/
+.formnav{
+    display: flex;
+    justify-content: center;
+    background-color: #e27e1a;
+    position: sticky;
+    top: 0;
+    border-style: inset outset;
+    border-width: 2px;
+    border-color: aqua;
+    font-family: 'Kanit', sans-serif;
+}
+
+.formnav a{
+    color: #0f0f05;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.formnav a:hover{ /*Le da color cuando pasamos el mouse por encima*/
+    background-color: rgba(255, 166, 0, 0.753);
+}
+
+@media (max-width:800px) {
+    .formnav{
+    flex-direction: column;
+    position: unset;
+        }
+    .formnav{
+        text-align: center;
+    }
+    }
+    
+
+    /* estilo parte principal */
+
+    .principal{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    aside{
+        flex-basis: 25%;
+        height: 400px;
+        background-color:#06171a;
+        text-align:center;
+    }
+
+    aside h2{
+        color: #e27e1a;
+    }
+    main{
+        flex-basis: 75%;
+        padding: 20px;
+        padding-left: 40px; 
+        background-color: #06171a
+    }
+    
+    @media (max-width:800px) {
+        .principal{
+            flex-direction: column;
+        }
+    }
+
+    /* estilo para las cartas */
+    .card{
+        font-family: 'Kanit', sans-serif;
+        width: 100%;
+        margin-bottom: 50px;
+        border: #e27e1a;
+        background-color:aliceblue
+    }
+
+    .card-body a{
+        display: block;
+        margin: auto;
+        text-align: center;
+        width: fit-content;
+    }
+
+    .card-body a:hover{
+        background-color: #e27e1a;
+    }
+
+    .card-img-top{
+        width: 100%;
+        height: 22vw;
+        object-fit: cover;
+    }
+
+    main .readmore{
+        background-color: #e27e1a;
+        color: #000000;
+        text-decoration: none;
+        padding: 5px;
+        border-radius: 10px;
+        display: block;
+        margin: auto;
+        text-align: center;
+        width: fit-content;
+
+    }
+
+    main .readmore:hover { /*Le da color cuando pasamos el mouse por encima*/
+        background-color: rgba(255, 166, 0, 0.753);
+    }
+
+    .seemore{
+        background-color: #e27e1a;
+        color: #000000;
+        text-decoration: none;
+        padding: 5px;
+        border-radius: 10px;
+        display: block;
+        margin: auto;
+        text-align: center;
+        width: fit-content;
+    }
+    .seemore:hover{ /*Le da color cuando pasamos el mouse por encima*/
+        background-color: rgba(255, 166, 0, 0.753);
+    }
+
+    .image img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        transition: 0.5s all ease-in-out;
+    }
+
+    .image:hover img{   /* Esto hace que la imagen haga "zoom" cuando pasamnos el mouse por encima*/
+        transform:scale(1.07)
+    }
+
+
+    .ca{
+        font-family: 'Kanit', sans-serif;
+        border: 3px;
+        background-image: linear-gradient(orange, red);
+    }
+
+    .asidetitle{
+        text-decoration: underline;
+    }
+
+    @media (max-width:800px) { /*adapta las imagenes modelo responsive*/
+        .image img {
+            width: 60%;
+            height: auto;
+        }
+    }
+
+    div p{
+        color: #e27e1a;
+    }
+    div h3{
+        color: #e27e1a;
+    }
+
+    /*ESTILO FOOTER*/
+
+    footer{
+        padding: 10px;
+        text-align: center;
+        background-color: #000000;
+        color: #e27e1a;
+    }
+
+    /*estilo formilario*/
+
+    form {
+        pad: 40px;
+        background-color: 000000;
+        border: 5px outset #e27e1a ;
+    }
+
+    label{
+        background-color: #e27e1a;
+        color: #000000;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    fieldset {
+        display: grid;
+        grid-template-columns: 30vw 20vw;
+        gap: 10px;
+        margin: auto;
+        width: fit-content;
+        font-size: 1.2rem;
+        border: 5px double #e27e1a ;
+        text-align: center;
+
+    }
+    fieldset legend {
+        color: #e27e1a;
+    }
+
+    legend{
+        text-transform: uppercase;
+        font-size: 1.1rem;
+        font-family: 'Kanit', sans-serif;
+        font-weight: bolder;
+    }
+
+    @media (max-width:60px) {
+       fieldset{
+        display: flex;
+        flex-direction: column;
+       } 
+        
+    }
+
+    ul{
+        font-family: 'Kanit', sans-serif;
+        color: #e27e1a;
+    }
+
+    iframe{
+        border-style: ridge;
+        border-width: 8px;
+        border-color: #e27e1a;
+        margin-left: 650px;
+    }
+
+
