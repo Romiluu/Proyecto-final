@@ -27,16 +27,15 @@ img {
 }
 @media (max-width:991px) {
     .headerindex{
-        display: block;
-    }
-    
-}
+        display: flex; justify-content: center; }
+     }
 
 /*ESTILOS CARROUSEL*/
 
 #carouselExample img{
-    height: 30vw;
+    height: 50vh;
     width: 100%;
+    object-position: center;
 }
 @media (max-width:991px) {
     #carouselExample{
@@ -46,8 +45,8 @@ img {
 }
 
 /*Estilos de header*/
+
 header{
-    padding: 80px;
     padding-left: 250px;
     padding-right: 250px;
     text-align: center;
@@ -154,6 +153,14 @@ header div{ /*le da cuandrado de fondo al titulo*/
         }
     }
 
+    /* estilo parte principal2 */
+    .principal2{ 
+        display: flex; 
+        flex-wrap: wrap; 
+        justify-content: center;
+    } 
+
+
     /* estilo para las cartas */
     .card{
         font-family: 'Kanit', sans-serif;
@@ -162,7 +169,7 @@ header div{ /*le da cuandrado de fondo al titulo*/
         border: #e27e1a;
         background-color:aliceblue
     }
-
+    
     .card-body a{
         display: block;
         margin: auto;
@@ -257,10 +264,10 @@ header div{ /*le da cuandrado de fondo al titulo*/
         color: #e27e1a;
     }
 
-    /*estilo formilario*/
+    /*estilo formulario*/
 
     form {
-        pad: 40px;
+        padding: 40px;
         background-color: 000000;
         border: 5px outset #e27e1a ;
     }
@@ -294,7 +301,7 @@ header div{ /*le da cuandrado de fondo al titulo*/
         font-weight: bolder;
     }
 
-    @media (max-width:60px) {
+    @media (max-width:600px) {
        fieldset{
         display: flex;
         flex-direction: column;
@@ -308,10 +315,14 @@ header div{ /*le da cuandrado de fondo al titulo*/
     }
 
     iframe{
+        display: block;
         border-style: ridge;
         border-width: 8px;
         border-color: #e27e1a;
-        margin-left: 650px;
+        margin: auto;
     }
 
+    @media (max-width: 800px) { 
+        iframe { width: 60vw; height: 60vh; } 
+    }
 
