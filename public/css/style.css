@@ -47,8 +47,7 @@ img {
 /*Estilos de header*/
 
 header{
-    padding-left: 250px;
-    padding-right: 250px;
+    padding: 60px;
     text-align: center;
     background-image: url(../img/fondo.png);
     background-repeat: no-repeat;
